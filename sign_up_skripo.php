@@ -2,9 +2,9 @@
 define('DB_HOST','localhost');
 define('DB_NAME','temp_skripo');
 define('DB_USER','root');
-define('DB_PASSWORD','ghpquo');
+define('DB_PASSWORD','');
 
-$skripo_connect=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD);
+$skripo_connect=mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD);
 $db=mysql_select_db(DB_NAME,$skripo_connect) or die("failed to connect to mysql" . mysql_error());
 
 function new_user()
